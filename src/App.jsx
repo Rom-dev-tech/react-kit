@@ -1,5 +1,5 @@
-import PaintimgsList from './components/PaintingList';
-import Section from './components/Section';
+import PaintimgsList from './components/PaintingList/PaintingList';
+import Section from './components/Section/Section';
 import paintings from './paintings.json';
 
 const App = () => {

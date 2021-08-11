@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import defaultImg from '../components/default.jpg';
+import defaultImg from '../Painting/default.jpg';
 
 const Painting = props => {
   const { imageUrl = defaultImg, title, author, profileUrl, price, quantity } = props;
