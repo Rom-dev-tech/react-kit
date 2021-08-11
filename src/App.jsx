@@ -6,6 +6,7 @@ import Alert from './components/Alert/Alert';
 import Container from './components/Container/Container';
 import ColorPicker from './components/ColorPicker/ColorPicker';
 import Box from './components/Box/Box';
+import Flex from './components/Flex/Flex';
 
 const App = () => {
   return (
@@ -32,9 +33,11 @@ const App = () => {
 
       <Section title="Box">
         <Container>
-          <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
-          <Box type="medium" />
-          <Box type="large" />
+          <Flex>
+            <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
+            <Box type="medium" />
+            <Box type="large" />
+          </Flex>
         </Container>
       </Section>
     </>
