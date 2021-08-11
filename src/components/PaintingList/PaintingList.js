@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import Painting from '../Painting/Painting';
+import s from '../PaintingList/PaintingList.module.css';
 
 const PaintimgsList = ({ items }) => {
   return (
-    <ul className="card__list">
+    <ul className={s.list}>
       {items.map(item => (
-        <li className="card__item" key={item.id}>
+        <li className={s.item} key={item.id}>
           <Painting
             imageUrl={item.url}
             title={item.title}

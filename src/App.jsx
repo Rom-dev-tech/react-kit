@@ -10,27 +10,33 @@ import Box from './components/Box/Box';
 const App = () => {
   return (
     <>
-      <Container>
-        <Section title="Hero">
+      <Section title="Cards">
+        <Container>
           <PaintimgsList items={paintings} />
-        </Section>
-      </Container>
+        </Container>
+      </Section>
 
-      <Container>
-        <Alert text="Шеф все пропало!" type="success" />
-        <Alert text="Шеф все пропало!" type="warning" />
-        <Alert text="Шеф все пропало!" type="error" />
-      </Container>
+      <Section title="Alert">
+        <Container>
+          <Alert text="Шеф все пропало!" type="success" />
+          <Alert text="Шеф все пропало!" type="warning" />
+          <Alert text="Шеф все пропало!" type="error" />
+        </Container>
+      </Section>
 
-      <Container>
-        <ColorPicker options={colorPickerOptions} />
-      </Container>
+      <Section title="ColorPicker">
+        <Container>
+          <ColorPicker options={colorPickerOptions} />
+        </Container>
+      </Section>
 
-      <Container>
-        <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
-        <Box type="medium" />
-        <Box type="large" />
-      </Container>
+      <Section title="Box">
+        <Container>
+          <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
+          <Box type="medium" />
+          <Box type="large" />
+        </Container>
+      </Section>
     </>
   );
 };
