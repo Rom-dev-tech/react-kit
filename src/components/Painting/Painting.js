@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import '../Painting/Painting.css';
+import s from './Painting.module.css';
 import defaultImg from '../Painting/default.jpg';
 
 const Painting = props => {
   const { imageUrl = defaultImg, title, author, profileUrl, price, quantity } = props;
   return (
-    <div className="card">
+    <div className={s.card}>
       <img className="card__img" src={imageUrl ?? defaultImg} alt={title} width="480" />
       <h2 className="card__title">{title}</h2>
       <p className="description__author">
