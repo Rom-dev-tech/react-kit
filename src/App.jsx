@@ -36,7 +36,7 @@ const App = () => {
           <Flex>
             <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
             <Box type="medium" />
-            <Box type="large" />
+            <Box type="large" styles={{ color: 'tomato', fontSize: 40 }} />
           </Flex>
         </Container>
       </Section>

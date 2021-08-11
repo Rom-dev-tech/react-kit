@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './Box.css';
 
-function Box({ type, classNames, styles }) {
+function Box({ type, classNames = '', styles }) {
   return (
     <div className={`box ${type} ${classNames}`} style={styles}>
       Box
